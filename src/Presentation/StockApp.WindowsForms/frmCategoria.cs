@@ -32,7 +32,15 @@ namespace StockApp.WindowsForms
             novaCategoria.Status = chkStatus.Checked;
 
             var resultado = _categoriaRepositorio.Incluir(novaCategoria);
-            
+
+            if (resultado) 
+            {
+                MessageBox.Show("Categoria cadastrada com sucesso");
+            }
+            else 
+            {
+                MessageBox.Show("??????????????????????????????????");
+            }
 
         }
     }

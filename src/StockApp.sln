@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FCAC498C-9D82-437F-8BF2-129977DF2D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{5F6BFF5C-0B18-4862-A7C3-7E150A4B1DB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{7BE8687A-5623-41FC-B6CA-ED42B4B595D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApp.Business", "Business\StockApp.Business\StockApp.Business.csproj", "{35B86CCD-5041-4510-8ACD-A88CE40A7848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApp.DataAcces", "DataAcceess\StockApp.DataAcces\StockApp.DataAcces.csproj", "{2CBF0D0B-C818-49DD-B24B-48FA159B5788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApp.WindowsForms", "Presentation\StockApp.WindowsForms\StockApp.WindowsForms.csproj", "{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35B86CCD-5041-4510-8ACD-A88CE40A7848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B86CCD-5041-4510-8ACD-A88CE40A7848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B86CCD-5041-4510-8ACD-A88CE40A7848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B86CCD-5041-4510-8ACD-A88CE40A7848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBF0D0B-C818-49DD-B24B-48FA159B5788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBF0D0B-C818-49DD-B24B-48FA159B5788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBF0D0B-C818-49DD-B24B-48FA159B5788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBF0D0B-C818-49DD-B24B-48FA159B5788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35B86CCD-5041-4510-8ACD-A88CE40A7848} = {5F6BFF5C-0B18-4862-A7C3-7E150A4B1DB5}
+		{2CBF0D0B-C818-49DD-B24B-48FA159B5788} = {7BE8687A-5623-41FC-B6CA-ED42B4B595D6}
+		{8A7FAD03-98F7-4F4D-A41D-E32ED29EA83C} = {FCAC498C-9D82-437F-8BF2-129977DF2D00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DF03D1D-383E-404F-BD2C-7F4C67EF8C26}

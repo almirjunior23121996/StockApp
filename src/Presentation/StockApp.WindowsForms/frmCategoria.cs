@@ -1,4 +1,5 @@
 ﻿using StockApp.Business.Entidades;
+using StockApp.Business.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,26 @@ namespace StockApp.WindowsForms
 {
     public partial class frmCategoria : Form
     {
+        private readonly ICategoriaRepositorio _categoriaRepositorio;
         public frmCategoria()
         {
             InitializeComponent();
         }
 
+        public frmCategoria(ICategoriaRepositorio categoriaRepositorio) 
+        {
+            _categoriaRepositorio = categoriaRepositorio;
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             var novaCategoria = new Categoria();
+            novaCategoria.Nome = txtNome.Text;
+            novaCategoria.Status = chkStatus.Checked;
+
+            var resultado = _categoriaRepositorio.Incluir(novaCategoria);
+            
+
         }
     }
 }

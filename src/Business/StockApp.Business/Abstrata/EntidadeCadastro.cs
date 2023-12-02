@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace StockApp.Business.Abstrata
 {
-    internal class EntidadeCadastro
+    public abstract class EntidadeCadastro : EntidadeBase
     {
+        public string Nome { get; set; }
+        public bool Status { get; set; }
     }
 }
